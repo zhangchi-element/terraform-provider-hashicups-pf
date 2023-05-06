@@ -1,11 +1,15 @@
 terraform {
   required_providers {
-    hashicups = {
+    element = {
       source = "hashicorp.com/edu/hashicups-pf"
     }
   }
 }
 
-provider "hashicups" {}
+provider "element" {
+  host     = "http://localhost:19090"
+  username = "education"
+  password = "test123"
+}
 
-data "hashicups_coffees" "example" {}
+data "element_coffees" "example" {}
