@@ -16,7 +16,7 @@ provider "element" {
 resource "element_order" "edu" {
   items = [{
     coffee = {
-      id = 3
+      id = 4
     }
     quantity = 2
     }, {
